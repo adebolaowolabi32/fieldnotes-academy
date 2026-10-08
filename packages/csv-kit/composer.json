@@ -1,0 +1,25 @@
+{
+    "name": "cynthiaowolabi/csv-kit",
+    "description": "Streaming CSV validation with stable row cursors for resumable imports.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fieldnotes\\CsvKit\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fieldnotes\\CsvKit\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --bootstrap vendor/autoload.php tests"
+    }
+}
