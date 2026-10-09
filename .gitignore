@@ -29,3 +29,8 @@ Thumbs.db
 **/vendor/
 /packages/csv-kit/composer.lock
 **/.phpunit.cache/
+
+/dist/
+/demo/node_modules/
+/demo/test-results/
+/demo/playwright-report/

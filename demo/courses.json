@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "title": "The art of noticing",
+        "description": "Slow down, look closer, and turn everyday observations into fresh ideas.",
+        "category": "Creative thinking",
+        "instructor": "Cynthia Owolabi",
+        "lessons": [
+            {
+                "id": 1,
+                "title": "A fresh pair of eyes",
+                "minutes": 8,
+                "html": "<h2>Attention is a skill</h2>\n<p>We often walk through familiar places on autopilot. Noticing is the practice of interrupting that habit: choosing one small thing and paying attention to it without immediately deciding what it means.</p>\n<p>A designer might notice that a door handle looks like it should be pulled, even though the door opens with a push. A writer might notice that a quiet room is full of small sounds. Both start with observation, not a solution.</p>\n<h2>Try a five-minute field study</h2>\n<p>Choose a familiar object: a cup, a notebook, or a chair. Write down ten things you can directly observe. Include its shape, texture, position, and signs of use. Avoid judgments like 'beautiful' or 'badly designed' for now.</p>\n<blockquote>\n<p>An observation describes what is there. An interpretation explains what you think it means.</p>\n</blockquote>\n<p>Compare 'The mug has a chipped rim' with 'Someone was careless with this mug.' The first is observable; the second is a story that may be wrong.</p>\n<h2>Take it with you</h2>\n<p>Before your next meeting, spend one minute noticing your surroundings. Keep one concrete observation in a notebook. The aim is not to be clever. It is to see what you normally miss.</p>\n",
+                "quiz": {
+                    "question": "Which statement is an observation rather than an interpretation?",
+                    "options": [
+                        "The room feels neglected.",
+                        "There are three unopened envelopes on the table.",
+                        "The owner must be very busy."
+                    ],
+                    "correct": 1
+                }
+            },
+            {
+                "id": 2,
+                "title": "Ask a better question",
+                "minutes": 9,
+                "html": "<h2>Give curiosity somewhere to go</h2>\n<p>An observation is a starting point. A good question opens up possibilities without quietly deciding the answer in advance.</p>\n<p>'Why is this interface so confusing?' assumes confusion and blame. 'Where do people pause while using this interface?' invites evidence.</p>\n<h2>Open, then narrow</h2>\n<p>Begin with questions that invite a range of answers: What happens here? What changes over time? Who experiences this differently? Then narrow your focus to something you can actually investigate.</p>\n<p>For the chipped mug, you could ask: Where does the rim touch other objects during washing? This is more useful than guessing who broke it.</p>\n<h2>A small practice</h2>\n<p>Take yesterday's observation and write three questions about it. Circle the question that you could explore in ten minutes without buying anything or asking for special access.</p>\n<blockquote>\n<p>Curiosity becomes useful when you can name your next small action.</p>\n</blockquote>\n<p>Keep the other questions. They may be worth returning to later.</p>\n",
+                "quiz": {
+                    "question": "Which question best invites evidence?",
+                    "options": [
+                        "Why do users hate this page?",
+                        "Why did the designer make a mistake?",
+                        "At which step do users stop?"
+                    ],
+                    "correct": 2
+                }
+            },
+            {
+                "id": 3,
+                "title": "Build a noticing habit",
+                "minutes": 7,
+                "html": "<h2>Make the practice easy to return to</h2>\n<p>Habits become easier when the action is small and connected to something you already do. You do not need a special journal or an uninterrupted hour.</p>\n<p>After your morning drink, write one observation and one question. That is enough. Use the same notebook or file so that finding your notes does not become another task.</p>\n<h2>Review, do not just collect</h2>\n<p>Once a week, read your observations. Underline recurring themes. Perhaps you keep noticing how people wait, where sunlight falls, or which instructions people overlook. A theme can become a drawing, an experiment, or a useful change.</p>\n<h2>Your first experiment</h2>\n<p>Choose one theme and make a small, reversible change. If visitors miss a sign, try a clearer position and observe what changes. Record the result even if nothing improves.</p>\n<blockquote>\n<p>A field note is a record of learning, not proof that your first idea was right.</p>\n</blockquote>\n<p>You have finished the course when you can move from observation to question to a small experiment. Keep the loop going.</p>\n",
+                "quiz": {
+                    "question": "What makes a sustainable noticing practice?",
+                    "options": [
+                        "One small observation attached to an existing routine.",
+                        "Waiting for a completely free afternoon.",
+                        "Only writing down impressive ideas."
+                    ],
+                    "correct": 0
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Write with clarity",
+        "description": "Find the point, cut the noise, and make your next message easier to understand.",
+        "category": "Communication",
+        "instructor": "Cynthia Owolabi",
+        "lessons": [
+            {
+                "id": 4,
+                "title": "Start with the reader",
+                "minutes": 8,
+                "html": "<h2>Give your message a job</h2>\n<p>Before writing, name the person who will read your message and what they need to do after reading it. A status update, a request for help, and a proposal have different jobs.</p>\n<p>A reader needs the conclusion before the history. 'We need a decision on the venue by Friday' is a useful opening. Five paragraphs of planning history make that decision harder to find.</p>\n<h2>Try it</h2>\n<p>Choose a message you recently sent. Write its purpose in one sentence: 'After reading this, the reader should\u2026' Remove anything that does not help that purpose.</p>\n<h2>Leave enough context</h2>\n<p>Clarity does not mean deleting every detail. Keep the facts your reader needs to act: the decision, the deadline, and the consequence of delay.</p>\n",
+                "quiz": {
+                    "question": "What should you clarify before drafting?",
+                    "options": [
+                        "How many paragraphs to write.",
+                        "What the reader needs to know or do.",
+                        "Which impressive words to include."
+                    ],
+                    "correct": 1
+                }
+            },
+            {
+                "id": 5,
+                "title": "Trade abstractions for details",
+                "minutes": 10,
+                "html": "<h2>Show what you mean</h2>\n<p>Abstract phrases ask the reader to do the work. 'Improve communication' could mean many things. 'Send a three-line handover before the next shift' gives someone an action.</p>\n<p>Use concrete nouns and active verbs where possible. Instead of 'The implementation of changes was undertaken', write 'The team updated the form.'</p>\n<h2>Keep useful precision</h2>\n<p>Numbers, examples, and specific conditions help when they are relevant and supported. Do not invent a measurement just to sound precise.</p>\n<h2>Practice</h2>\n<p>Rewrite this sentence: 'We should optimize the onboarding experience.' Name one change, who will make it, and how you will check whether it helped.</p>\n",
+                "quiz": {
+                    "question": "Which revision gives a concrete next action?",
+                    "options": [
+                        "Enhance stakeholder alignment.",
+                        "Drive improved onboarding outcomes.",
+                        "Ask three new users to try the signup form and record where they pause."
+                    ],
+                    "correct": 2
+                }
+            },
+            {
+                "id": 6,
+                "title": "Edit for the next action",
+                "minutes": 7,
+                "html": "<h2>Read your draft like a busy person</h2>\n<p>Look only at the first sentence of each paragraph. Can you understand the message? If not, move the main point closer to the beginning.</p>\n<h2>Three editing passes</h2>\n<p>First, check the purpose: does the message answer the reader's real question? Second, check the sequence: does each sentence prepare for the next? Third, check the words: can a shorter, familiar word say the same thing?</p>\n<h2>End where the reader can act</h2>\n<p>A useful ending names the next step. 'Please choose option A or B by Thursday' is easier to act on than 'Please advise'. If no action is needed, say so.</p>\n<blockquote>\n<p>An edit succeeds when the reader spends less effort finding the meaning.</p>\n</blockquote>\n",
+                "quiz": {
+                    "question": "Which ending makes the next step clearest?",
+                    "options": [
+                        "Please choose A or B by Thursday.",
+                        "Kindly do the needful.",
+                        "We await further alignment."
+                    ],
+                    "correct": 0
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Everyday systems thinking",
+        "description": "See the connections behind a problem and make changes that hold up over time.",
+        "category": "Problem solving",
+        "instructor": "Cynthia Owolabi",
+        "lessons": [
+            {
+                "id": 7,
+                "title": "Look beyond the event",
+                "minutes": 9,
+                "html": "<h2>A problem has a setting</h2>\n<p>When a queue grows, it is tempting to blame the person serving it. Systems thinking asks what conditions shape the result: arrival rates, available tools, interruptions, and the rules people follow.</p>\n<p>An event is what happened today. A pattern is what keeps happening. A structure is what makes that pattern likely.</p>\n<h2>Map one small system</h2>\n<p>Choose a familiar process, like getting ready for work. List the steps and dependencies. Which steps wait for another step? Where does an interruption spread?</p>\n<p>Do not try to map the entire world. Draw a boundary around the question you want to answer, then note what you have left outside it.</p>\n",
+                "quiz": {
+                    "question": "Which question looks beyond a single event?",
+                    "options": [
+                        "Who can we blame for this morning?",
+                        "What conditions make the delay happen repeatedly?",
+                        "How can we hide the queue?"
+                    ],
+                    "correct": 1
+                }
+            },
+            {
+                "id": 8,
+                "title": "Follow the feedback",
+                "minutes": 10,
+                "html": "<h2>Effects can become causes</h2>\n<p>A feedback loop exists when the result of an action influences the next action. Practice can build confidence, which encourages more practice. That is a reinforcing loop.</p>\n<p>A thermostat behaves differently: when the room warms, heating reduces. That is a balancing loop, acting against a change.</p>\n<h2>Notice the delay</h2>\n<p>Feedback is rarely immediate. If you water a plant every hour because it still looks dry, the delay in its response can lead you to overwater it.</p>\n<p>Before reacting again, ask how long the system needs to show a result. Record when you made a change so you can compare like with like.</p>\n",
+                "quiz": {
+                    "question": "Why do delays matter when changing a system?",
+                    "options": [
+                        "They mean feedback is useless.",
+                        "They always prove the change failed.",
+                        "Acting again too soon can overcorrect before the first change takes effect."
+                    ],
+                    "correct": 2
+                }
+            },
+            {
+                "id": 9,
+                "title": "Choose a small intervention",
+                "minutes": 8,
+                "html": "<h2>Change one thing you can learn from</h2>\n<p>A useful intervention is small enough to reverse and clear enough to evaluate. Changing five things at once makes it harder to understand what mattered.</p>\n<p>For a recurring meeting that runs late, try sharing the decision to be made before the meeting starts. Observe the duration and whether the decision is reached. Do not judge success using duration alone.</p>\n<h2>Watch for displaced problems</h2>\n<p>An improvement in one place can move the burden elsewhere. Faster customer intake may create a larger queue for the next team. Ask who experiences the downstream effects.</p>\n<h2>Close the loop</h2>\n<p>State your expectation, make the change, wait for a reasonable interval, and compare the result. Keep, revise, or undo the change based on what you find.</p>\n",
+                "quiz": {
+                    "question": "What is a useful first intervention?",
+                    "options": [
+                        "A small reversible change with a stated expectation and a way to observe results.",
+                        "A complete redesign with no baseline.",
+                        "Several simultaneous changes with no record."
+                    ],
+                    "correct": 0
+                }
+            }
+        ]
+    }
+]
