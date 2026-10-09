@@ -2,6 +2,12 @@
 
 A working Laravel learning platform by [Cynthia Owolabi](https://adebolaowolabi32.github.io/). Browse courses, enroll, read lessons, answer knowledge checks, and earn a personal completion certificate. Instructors create and publish courses and import registered learners through a preview-first, resumable queue workflow.
 
+## Public demo
+
+**[Try Fieldnotes Academy](https://adebolaowolabi32.github.io/fieldnotes-academy/)** — no login required. Explore courses, enroll as fictional learner Alex Morgan, complete quizzes and print a demo certificate. Progress is stored in your browser, with an in-memory fallback when storage is unavailable. Use **Reset demo** to start over.
+
+Like my other portfolio demos, this preview is hosted on GitHub Pages. It runs browser JavaScript with fictional data, not the PHP backend. Authentication, instructor authoring, private certificates, queued notifications and CSV import processing are implemented in the runnable Laravel app below. Preview quiz answers are intentionally public and its progress is not a security boundary.
+
 ## Run locally
 
 Requires PHP 8.4+, Composer 2, PDO SQLite, mbstring, DOM/XML and standard Laravel extensions. No Node build is required: the interface uses Blade and hand-written CSS. Fonts fall back to system fonts when offline.
@@ -34,7 +40,7 @@ These are disposable local demo accounts. Registration always creates a learner;
 
 The three sample courses contain nine complete reading lessons. Their content is original demonstration material; completion certificates are learning milestones, not accredited qualifications.
 
-## Architecture and decisions
+## Laravel architecture and decisions
 
 - **Laravel 13 / PHP 8.4 / Blade / SQLite.** The browser submits ordinary CSRF-protected forms. Data is stored by Laravel, not simulated in browser storage.
 - **Authorization:** a course policy checks instructor status and course ownership. Lesson access is scoped to the authenticated learner's enrollment. Certificate access is owner-only.
@@ -65,7 +71,20 @@ The suite covers catalogue visibility, registration privilege boundaries, authen
 
 `packages/csv-kit` has its own Composer metadata and PHPUnit suite. See its README for standalone installation and the checkpoint contract. It has no Laravel dependency. It is included through Composer's path repository so this checkout is reproducible without publishing to Packagist.
 
-## Deployment
+## Build the browser preview
+
+```sh
+npm ci --prefix demo
+npm --prefix demo run build
+npm --prefix demo test
+cd demo && npx playwright install chromium && npm run test:browser
+```
+
+`demo/` contains the browser preview; the build copies only its assets plus public CSS/favicon into `dist/`. The Pages workflow tests desktop and mobile learner journeys before deploying `dist/`. No PHP source, database, environment file, or uploaded CSV is published as a Pages asset.
+
+To regenerate the committed fictional course fixture after changing the seeder, run `php artisan demo:export`. It seeds a separate in-memory SQLite database, never exports the application's learner data, and refuses production environments.
+
+## PHP deployment
 
 Use a PHP-capable host with a persistent database and a supervised queue worker. Set a unique `APP_KEY`, `APP_ENV=production`, `APP_DEBUG=false`, the public `APP_URL`, database credentials, and a mail transport. Run `composer install --no-dev --optimize-autoloader`, `php artisan migrate --force`, and `php artisan optimize`. Serve only `public/`. Do not run the demo seeder on a public deployment or expose its shared accounts. GitHub Pages cannot execute this PHP backend.
 

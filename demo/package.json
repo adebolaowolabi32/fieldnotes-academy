@@ -1,0 +1,13 @@
+{
+    "name": "fieldnotes-portfolio-preview",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "node build.mjs",
+        "test": "node --test tests/model.test.mjs",
+        "test:browser": "playwright test"
+    },
+    "devDependencies": {
+        "@playwright/test": "1.58.2"
+    }
+}
