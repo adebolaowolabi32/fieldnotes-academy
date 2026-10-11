@@ -51,7 +51,7 @@ The three sample courses contain nine complete reading lessons. Their content is
 - **Undo:** import provenance identifies newly created enrollments. Undo locks the batch and enrollment rows, then deletes only unused rows. It never removes a pre-existing enrollment.
 - **Private files:** imports are stored on the private local disk, never exposed through a public storage link.
 
-### Deliberate boundaries
+### Limitations
 
 This is a portfolio application, not a hosted production LMS. It does not implement paid courses, video hosting, password reset, email verification, course editing after publication, or invite-based account provisioning. Imported learners must already be registered. CSVs are limited to 1 MB / 5,000 rows; preview stops after 25 account errors. The parser fails fast on malformed CSV rows. Import history requires a refresh. Imported files need a retention policy before production use.
 
@@ -65,11 +65,11 @@ vendor/bin/pint --format agent
 composer validate --strict
 ```
 
-The suite covers catalogue visibility, registration privilege boundaries, authentication, idempotent enrollment, private lessons/certificates, server-side grading, repeated completion, instructor ownership, draft publishing, sanitized Markdown, CSV validation, queued imports, checkpoint resume, replay, and safe undo. Browser smoke checks exercise sign-in and saved lesson progress.
+Tests check that learners cannot access another person's certificate, repeated quiz submissions do not increase progress, and retried imports do not duplicate enrollments. They also cover instructor permissions, course publishing and safe import undo. See [`tests/Feature`](tests/Feature) for the individual scenarios.
 
 ## The extracted PHP package
 
-`packages/csv-kit` has its own Composer metadata and PHPUnit suite. See its README for standalone installation and the checkpoint contract. It has no Laravel dependency. It is included through Composer's path repository so this checkout is reproducible without publishing to Packagist.
+`packages/csv-kit` has its own Composer metadata and PHPUnit suite. See its README for standalone installation and the checkpoint contract. It has no Laravel dependency. The standalone release is available on [Packagist](https://packagist.org/packages/cynthiaowolabi/csv-kit) and in the [CSV Kit repository](https://github.com/adebolaowolabi32/csv-kit). This application still uses the bundled copy through a Composer path repository.
 
 ## Build the browser preview
 
@@ -90,4 +90,4 @@ Use a PHP-capable host with a persistent database and a supervised queue worker.
 
 ## License
 
-MIT. Built independently for Cynthia Owolabi's portfolio; no employer code or data is included.
+MIT © Cynthia Owolabi. The sample courses and learners are fictional; no employer code or data is included.
