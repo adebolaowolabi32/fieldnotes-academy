@@ -22,7 +22,7 @@ foreach ((new Reader)->rows('/private/learners.csv', after: $savedCursor) as $ro
 
 The file must have exactly one `email` header. UTF-8 BOM, CRLF, quoted fields, whitespace, and email case normalization are supported. Invalid headers, extra fields, blank records, and invalid email addresses throw `InvalidArgumentException` with the data-row number where applicable. The generator closes its file handle when finished or destroyed.
 
-Resume uses a row cursor, not a byte offset: skipped rows are scanned again. Keep the input immutable across attempts. The library does not implement durable checkpoints, queues, rollback, account lookup, or exactly-once side effects; Fieldnotes Academy demonstrates those application responsibilities. It fails fast at the first malformed row. Memory usage is bounded by the largest row, not the full file.
+Resume uses a saved row number: the reader scans past earlier rows. Keep the input immutable across attempts. The calling application manages durable checkpoints, queues, rollback, account lookup and idempotent side effects. Fieldnotes Academy demonstrates these responsibilities. It fails fast at the first malformed row. Memory usage scales with the largest row.
 
 This is the copy bundled with Fieldnotes Academy. The standalone package is published on [Packagist](https://packagist.org/packages/cynthiaowolabi/csv-kit):
 
