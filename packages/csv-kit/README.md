@@ -24,6 +24,12 @@ The file must have exactly one `email` header. UTF-8 BOM, CRLF, quoted fields, w
 
 Resume uses a row cursor, not a byte offset: skipped rows are scanned again. Keep the input immutable across attempts. The library does not implement durable checkpoints, queues, rollback, account lookup, or exactly-once side effects; Fieldnotes Academy demonstrates those application responsibilities. It fails fast at the first malformed row. Memory usage is bounded by the largest row, not the full file.
 
-This is a local Composer package, not yet published to Packagist. Use a Composer path repository for local development, or configure a VCS repository when published separately.
+This is the copy bundled with Fieldnotes Academy. The standalone package is published on [Packagist](https://packagist.org/packages/cynthiaowolabi/csv-kit):
+
+```sh
+composer require cynthiaowolabi/csv-kit:^1.0
+```
+
+See the [standalone repository](https://github.com/adebolaowolabi32/csv-kit) for releases and package development. Fieldnotes continues to use this bundled copy through a Composer path repository.
 
 MIT © Cynthia Owolabi.
